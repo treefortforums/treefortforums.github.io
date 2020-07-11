@@ -15,13 +15,56 @@
 	<title>Treefort Creators</title>
 </head>
 <body>
-  <header>
-	  <h1>Treefort Creators</h1>
-  </header>
-	
-
-
-
+<div class="container">
+	<header>
+		<h1>Treefort Creators</h1>
+	</header>
+	<form>
+		<div class="form-group row">
+			<label for="donorName" class="col-md-3 col-form-label">Your Treefort Username</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" id="donorName" placeholder="Your Username">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="recipName" class="col-md-3 col-form-label">Recipient's Treefort Username</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" id="recipName" placeholder="Recipient's Username">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="thread" class="col-md-3 col-form-label">Thread Title</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" id="thread" placeholder="Thread Title">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="post" class="col-md-3 col-form-label">Post Number</label>
+			<div class="col-md-9">
+				<input type="number" class="form-control" id="post" placeholder="Post Number">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="amount" class="col-md-3 col-form-label">Donation Amount</label>
+			<div class="col-md-3">
+				<select name="currency" class="form-control">
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+					<option value="JPY">JPY</option>
+					<option value="GBP">GBP</option>					
+					<option value="CHF">CHF</option>
+					<option value="CAD">CAD</option>					
+					<option value="AUD">AUD</option>
+					<option value="ZAR">ZAR</option>
+				</select>
+			</div>
+			<div class="col-md-6">
+				<input type="number" class="form-control" id="amount" placeholder="Donation Amount">
+			</div>
+		</div>
+		<input class="btn btn-success btn-lg col-md-3 offset-md-3" type="submit" value="Submit">
+	</form>
+</div>
 </body>
 
 
