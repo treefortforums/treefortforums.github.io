@@ -1,0 +1,25 @@
+{
+	"name" : "TreefortCreators",
+	"version" : "0.0.1",
+	"description" : "Page to process Treefort Content Creations",
+	"main" : "index.js",
+	/*
+	"scripts": {
+		"start" : "node index.js"
+	}
+	*/
+	"dependencies": {
+		"express" : "~4.9.x"
+		//paypal
+	},
+	"engines":{
+		"node" : "^8.3.0"
+	},
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/treefortforums/treefortforums.github.io"
+	},
+	"keywords": ["creators", "node", "treefortforums"],
+	"license" : "MIT"
+}
+
