@@ -1,4 +1,42 @@
-html, body{
-	
-	
+body {
+	background-image: url("images/green_cup.png");
+	background-color: #5F6A6A;
+}
+
+form {
+	background-image: url("images/middlebackground.jpg");
+	background-color: #F2F4F4;
+	padding: 30px;
+	font-size: 1.1em;
+	margin-top: -33px;
+}
+
+header {
+	background-image: url("images/header.jpg");
+	background-color: green;
+}
+
+#logo {
+	float: left;
+}
+
+.mainmenu {
+	font-size: 2em;
+	font-family: Impact, sans-serif;
+	font-weight: bold;
+	margin-top: 3%;
+	margin-bottom: -6%;
+}
+
+.mainmenu a {
+	padding-right: 30px;
+}
+
+.mainmenu a:link, a:visited {
+	color: white;
+}
+
+.mainmenu a:hover {
+	color: #fdf5e6;
+	text-decoration: none;
 }
