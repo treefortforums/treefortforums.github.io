@@ -11,7 +11,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	
+<script type="text/Javascript" src="auth.js"></script>	
 	<title>Treefort Creators</title>
 </head>
 <body>
@@ -27,29 +27,29 @@
 			<a href="https://www.treefortforums.net/support-us" class="text-nowrap">SUPPORT TREEFORT</a>
 		</nav>
 	</header>
-	<form>
+	<form name="info" onsubmit="return donorCaps();">
 		<div class="form-group row">
 			<label for="donorName" class="col-md-3 col-form-label">Your Treefort Username</label>
 			<div class="col-md-9">
-				<input type="text" class="form-control" id="donorName" placeholder="Your Username">
+				<input type="text" name="donorName" class="form-control" id="donorName" placeholder="Your Username" required />
 			</div>
 		</div>
 		<div class="form-group row">
 			<label for="recipName" class="col-md-3 col-form-label">Recipient's Treefort Username</label>
 			<div class="col-md-9">
-				<input type="text" class="form-control" id="recipName" placeholder="Recipient's Username">
+				<input type="text" name="recipName" class="form-control" id="recipName" placeholder="Recipient's Username" required />
 			</div>
 		</div>
 		<div class="form-group row">
 			<label for="thread" class="col-md-3 col-form-label">Thread Title</label>
 			<div class="col-md-9">
-				<input type="text" class="form-control" id="thread" placeholder="Thread Title">
+				<input type="text" name="thread" class="form-control" id="thread" placeholder="Thread Title" required />
 			</div>
 		</div>
 		<div class="form-group row">
 			<label for="post" class="col-md-3 col-form-label">Post Number</label>
 			<div class="col-md-9">
-				<input type="number" class="form-control" id="post" placeholder="Post Number" min="1" max="10000">
+				<input type="number" name="post" class="form-control" id="post" placeholder="Post Number" min="1" max="10000" required />
 			</div>
 		</div>
 		<div class="form-group row">
@@ -67,11 +67,18 @@
 				</select>
 			</div>
 			<div class="col-md-6">
-				<input type="number" class="form-control" id="amount" placeholder="Donation Amount" min="0" max="1000" step="0.01">
+				<input type="number" name="amount" class="form-control" id="amount" placeholder="Donation Amount" min="0" max="10000" step="0.01" required />
 			</div>
 		</div>
 		<input class="btn btn-success btn-lg col-md-3 offset-md-3" type="submit" value="Submit">
 	</form>
+	<footer class="gfoot">
+		<a href="https://www.treefortforums.net/help">HELP</a>
+		<a href="https://www.treefortforums.net/contact-us">CONTACT US</a>
+		<a href="https://www.treefortforums.net/TermsOfUse" class="text-nowrap">TERMS OF USE</a>
+		<a href="https://www.treefortforums.net/privacy">PRIVACY</a>
+		<a href="#top" style="border-right:none;" class="text-nowrap">GO TO TOP</a>
+	</footer>
 </div>
 </body>
 
