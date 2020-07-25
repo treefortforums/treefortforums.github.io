@@ -27,7 +27,7 @@
 			<a href="https://www.treefortforums.net/support-us" class="text-nowrap">SUPPORT TREEFORT</a>
 		</nav>
 	</header>
-	<form name="info" onsubmit="return donorCaps();">
+	<form name="info" onsubmit="donorCheck(); recipCheck(); nameCheck();">
 		<div class="form-group row">
 			<label for="donorName" class="col-md-3 col-form-label">Your Treefort Username</label>
 			<div class="col-md-9">
@@ -41,15 +41,20 @@
 			</div>
 		</div>
 		<div class="form-group row">
-			<label for="thread" class="col-md-3 col-form-label">Thread Title</label>
+			<label for="post" class="col-md-3 col-form-label">Post Name</label>
 			<div class="col-md-9">
-				<input type="text" name="thread" class="form-control" id="thread" placeholder="Thread Title" required />
+				<input type="text" name="post" class="form-control" id="post" placeholder="Post Name" required />
 			</div>
 		</div>
 		<div class="form-group row">
-			<label for="post" class="col-md-3 col-form-label">Post Number</label>
+			<label for="thread" class="col-md-3 col-form-label">Thread Title</label>
 			<div class="col-md-9">
-				<input type="number" name="post" class="form-control" id="post" placeholder="Post Number" min="1" max="10000" required />
+				<select name="thread" class="form-control">
+					<option value="music">Music</option>
+					<option value="art">Art</option>
+					<option value="photography">Photography</option>
+					<option value="poetry">Poetry</option>
+				</select>
 			</div>
 		</div>
 		<div class="form-group row">
