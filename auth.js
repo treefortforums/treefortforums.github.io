@@ -48,3 +48,21 @@ function nameCheck() {
 		}	
 	}
 }
+
+//validation for creator registration page
+function registerCheck() {
+	var user = ["undies", "audiogen", "j ruth", "meliai", "tumbling.dice"]  //test array
+	var uname = document.forms["register"]["userName"].value;  //Treefort Username entry
+	var uname = uname.toLowerCase();
+	var i = 0;
+    for (i; i <= user.length; i++) {  //checks inputted username against names in array
+		if (uname == user[i]) {
+			return true;
+		} else if (i >= user.length) {	//these lines alert to the error and focus attention on the input area where the error occurred
+			alert ("Please enter a valid username");
+			document.forms["register"]["userName"].parentNode.className = "form-group has-error";  
+			document.forms["register"]["userName"].focus();
+			event.preventDefault();  //stops from submitting if there is error.  may not be needed with your code changes
+		}	
+	}
+}
